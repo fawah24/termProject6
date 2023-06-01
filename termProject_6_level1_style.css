@@ -1,0 +1,103 @@
+* {border-size: border-box;}
+
+body {
+	background-color: ivory;
+}
+
+canvas {
+	border:2px groove;
+	border-radius: 10px;
+}
+
+#slideGreeting {
+	margin: 70px 0px 0px;
+	color:teal;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+	animation-name:slideIn;
+	animation-duration:3s;
+}
+@keyframes slideIn {
+	from { padding-bottom:100%; width: 300%;}
+	to { padding-bottom:0%; width: 100%;}
+}
+
+#gameArea {
+	margin: auto;
+	background-color: honeydew;
+	width: 520px;
+	box-shadow: 2px 5px 4px cornsilk;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	justify-content: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+#heading {
+	background-color: darkslategray;
+	border-radius: 5px;
+	margin: 0px 0px 30px;
+	color: white;
+	font: bold 29px Copperplate, Papyrus, fantasy;
+	line-height: 50px;
+}
+
+#reminder {
+	color: #1d3030;
+}
+
+/* the area of displaying English words */
+#wordContainer {
+	color:indigo;
+}
+
+/* hightlight two words: 3 & play */
+span.red {
+	color: #e91640;
+	text-transform: uppercase;
+	opacity:0;
+	animation-name: appearRed;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes appearRed {	
+	from { opacity: 0;}
+	to { opacity: 1;}
+}
+
+.highlight {
+	color: #e91640;
+	text-transform: uppercase;
+}
+
+/* the area of displaying feedback */
+.gameInfo {
+	color: #1d3030;
+}
+
+/* two buttons: Play & Next */
+.toButton {
+	border: 1px solid DarkSlateGrey;
+   	color: DarkSlateGrey;
+	border-radius: 30px;
+	font: bold 18px Copperplate, Papyrus, fantasy;;
+}
+.toButton:hover {
+	background-color:DarkSlateGrey;
+	color:white;
+}
+
+/* button: next level */
+#finalQuiz {
+	font: bold 18px Copperplate, Papyrus, fantasy;
+	padding: 5px 5px;
+	border: outset;
+}
+
+#finalQuiz:hover {
+	background-color: darkslategray;
+	color: white;
+}

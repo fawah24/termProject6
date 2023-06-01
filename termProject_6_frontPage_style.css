@@ -1,0 +1,101 @@
+body{
+	background: FloralWhite;
+}
+
+/* CSS rules for the whole game area */
+#userInfo {
+	background-color: MistyRose;
+	border-radius: 20px;
+	text-align:center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: navy;
+	width: 60%;
+	margin: auto;
+	box-shadow: 2px 3px 4px gray;
+}
+
+/* CSS rules for heading */
+#heading {
+	background-color: MidnightBlue;
+	color: white;
+	font: bold 3.2em Copperplate, Papyrus, fantasy;
+	border-radius: 20px 20px 0px 0px;
+	padding: 4px;
+}
+
+/* CSS rules for the "welcome on board" */
+#greeting {
+	text-align: center;
+	font weight: bold;
+	font-size: 2em; 
+	animation-name: rainbow;
+	animation-duration: 8s;
+	animation-iteration-count:infinite;
+	animation-fill-mode: forwards;
+}
+@keyframes rainbow {
+	0% { color:OrangeRed; }
+	20% { color:orange; }
+	40% { color:Gold; }
+	60% { color:LightGreen; }
+	80% { color:RoyalBlue; }
+	100% { color:blueViolet; }
+}
+
+/* CSS rules for the enterName*/
+#enterName {
+	font-size: 1.5em;
+}
+
+/* CSS rules for HERE button */
+#startGame {
+	color: orangered;
+	font-weight: bold;
+	border: 2px dotted;
+	padding: 0.5px 3px;
+}
+#startGame:hover {
+	text-transform: uppercase;
+}
+
+/* CSS rules for Instructions */
+#beginmessage {
+	color: Indigo;
+	background-color:SeaShell;
+	font: bold 2.5em "Trebuchet MS", Helvetica, sans-serif;
+	width:80%;
+	margin: auto;
+	border-radius: 5px;
+	padding: 0px 20px;
+
+}
+
+/* CSS rules for all buttons */
+#enterButton {
+	font: bold 1em "Trebuchet MS", Helvetica, sans-serif;
+	color: navy;
+	border: 1px solid navy;
+	border-radius: 3px;
+}
+
+#enterButton:hover {
+	font: bold 1em Copperplate, Papyrus, fantasy;
+	background-color: navy;
+	color: white;
+}
+
+#startButton {
+	font: bold 1.5em Copperplate, Papyrus, fantasy;
+	color: indigo;
+	border: 2px outset;
+}
+
+#startButton:hover {
+	background-color: indigo;
+	color: white;
+}
+
+
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Level 0: Vocabulary Revision</title>
+	<link rel="stylesheet" type="text/css" href="termProject_6_level0_style.css" />
+	<script src="termProject_6_level0_script.js"></script>
+</head>
+
+<body onload="timer(); toStart()">
+	<div id="gameArea">
+		<h1 id="heading">Level 0: Vocabulary Revision</h1>
+		<p id="hintContainer" onmouseover="printClick()" onmouseout="printHint()" onclick="displayHint()">Hint: move the cursor here</p>
+		<h2 id="wordContainer"></h2>
+		<p id="timeContainer">Time Left: <span id="time">30</span></p>
+		<p id="scoreContainer">Score: <span id="score">0</span></p>
+		<form>
+			<input type="text" id="input_engAnswer" autocomplete="off" autofocus onkeypress="return pressEnter(event);" >
+		</form>
+		<button id="toButton" onclick="enterAnswer()">Enter</button>
+		<p id="feedbackContainer">Answering the correct spelling of the word.</p>
+		<p id="noteContainer">Note: The <span id="toNextWord">Next Word</span> button <span id="toNot">not</span> being displayed when the answer is wrong</p>
+	    <div id="endGameArea"></div>
+	</div>	
+</body>
+
+</html>

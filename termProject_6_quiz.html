@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Final Quiz</title>
+	<link rel="stylesheet" type="text/css" href="termProject_6_quiz_style.css" />
+	<script src="termProject_6_quiz_script.js"></script>
+</head>
+
+<body onload="start()">
+	<h1 class="maroon"><span class="letter" id="letter1"> Quick! Quick!</span> <span class="letter" id="letter2"> Quick!</span><span class="letter" id="letter3"> Just ONE step left!!!!!</span></h1>
+	<div class="rose">
+		<div>
+			<h1 id="heading">Final Level: An Overall Quiz</h1>
+			<p id="reminder">Note: The victory button is disabled if you cannot get full marks - 10 out of 10.</p>
+		</div>
+		<ol>
+			<div class="shell">
+				<!-- Question 1 -->
+				<li>Which of the following is the correct definition of "押韻"?
+					<br />
+					<br />
+					<form>
+						<input type="radio" name="q1" id="question_q1" onclick="q1Feedback()" />A. a type of question that describes something in a difficult and confusing way and has a clever or funny answer, often asked as a game<br />
+						<input type="radio" name="q1" id="lastsound_q1" onclick="q1Feedback()" />B. a word that has the same last sound as another word<br />
+						<input type="radio" name="q1" id="expression_q1" onclick="q1Feedback()" />C. an expression that describes a person or object by referring to something that is considered to have similar characteristics to that person or object<br />
+						<input type="radio" name="q1" id="use_q1" onclick="q1Feedback()" />D. the use, especially in poetry, of the same sound or sounds, especially consonants, at the beginning of several words that are close together<br />
+					</form>
+					<p class="feedback" id="feedback1"></p>
+				</li>
+			</div>
+			<div class="shell">
+				<!-- Question 2 -->
+				<li>Which of the following is the correct definition of "人造"?
+					<br />
+					<br />
+					<form>
+						<input type="radio" name="q2" id="madebyppl_q2" onclick="q2Feedback()" />A. made by people, often as a copy of something natural<br />
+						<input type="radio" name="q2" id="object_q2" onclick="q2Feedback()" />B. an object that is made by a person, such as a tool or a decoration, especially one that is of historical interest<br />
+						<input type="radio" name="q2" id="latin_q2" onclick="q2Feedback()" />C. a Latin word meaning "artery", used in medical names and descriptions<br />
+						<input type="radio" name="q2" id="workofart_q2" onclick="q2Feedback()" />D. a work of art such as a painting, film, or book that is made with great skill<br />
+					</form>
+					<p class="feedback" id="feedback2"></p>
+				</li>
+			</div>
+			<div class="shell">
+				<!-- Question 3 -->
+				<li>Which of the following is the correct definition of "蹂躪"?
+					<br />
+					<br />
+					<form>
+						<input type="radio" name="q3" id="damage_q3" onclick="q3Feedback()" />A. to damage something so badly that it cannot be used<br />
+						<input type="radio" name="q3" id="cause_q3" onclick="q3Feedback()" />B. to cause someone or something to die<br />
+						<input type="radio" name="q3" id="destroy_q3" onclick="q3Feedback()" />C. to destroy a place or thing completely or cause great damage<br />
+						<input type="radio" name="q3" id="stopliving_q3" onclick="q3Feedback()" />D. to stop living or existing, either suddenly or slowly<br />
+					</form>
+					<p class="feedback" id="feedback3"></p>
+				</li>
+			</div>
+			<div class="shell">
+				<!-- Question 4 -->
+				<li>Which of the following is the correct Chinese translation of "miserable"? (more than one correct answers)
+					<br />
+					<br />
+					<form>
+						<input type="checkbox" id="nervous_q4" onclick="q4Feedback()" />A. 緊張<br /> 
+						<input type="checkbox" id="poor_q4" onclick="q4Feedback()" />B. 可憐<br />
+						<input type="checkbox" id="evil_q4" onclick="q4Feedback()" />C. 邪惡<br />
+						<input type="checkbox" id="miserable_q4" onclick="q4Feedback()" />D. 慘<br />
+					</form>
+					<p class="feedback" id="feedback4"></p>
+				</li>
+			</div>
+			<div class="shell">
+				<!-- Question 5 -->
+				<li>Which of the following is the correct Chinese translation of "abolish"?  
+					<br />
+					<br />
+					<form>
+						<input type="radio" name="q5" id="abandon_q5" onclick="q5Feedback()" />A. 遺棄<br />
+						<input type="radio" name="q5" id="adopt_q5" onclick="q5Feedback()" />B. 適應<br />
+						<input type="radio" name="q5" id="takeaway_q5" onclick="q5Feedback()" />C. 廢除<br />
+						<input type="radio" name="q5" id="throwaway_q5" onclick="q5Feedback()" />D. 抛棄<br />
+					</form>
+					<p class="feedback" id="feedback5"></p>
+				</li>
+			</div>
+			<div class="shell">
+				<!-- Question 6 -->
+				<li>Which of the following is the correct Chinese translation of "achieve"? (more than one correct answers)
+					<br />
+					<br />
+					<form>
+						<input type="checkbox" id="pursue_q6" onclick="q6Feedback()" />A. 實現<br /> 
+						<input type="checkbox" id="meet_q6" onclick="q6Feedback()" />B. 達到<br />
+						<input type="checkbox" id="finish_q6" onclick="q6Feedback()" />C. 完成<br />
+						<input type="checkbox" id="success_q6" onclick="q6Feedback()" />D. 成功<br />
+					</form>
+					<p class="feedback" id="feedback6"></p>
+				</li>
+			</div>
+			<div class="shell">
+				<!-- Question 7 -->
+				<li>He claimed that the boar has ____ him seriously. (more than one correct answers)
+					<br />
+					<br />
+					<form>
+						<input type="checkbox" id="attacked_q7" onclick="q7Feedback()" />A. attacked<br /> 
+						<input type="checkbox" id="assaulted_q7" onclick="q7Feedback()" />B. assaulted<br />
+						<input type="checkbox" id="astonished_q7" onclick="q7Feedback()" />C. astonished<br />
+						<input type="checkbox" id="awful_q7" onclick="q7Feedback()" />D. awful<br />
+					</form>
+					<p class="feedback" id="feedback7"></p>
+				</li>
+			</div>
+			<div class="shell">
+				<!-- Question 8 -->
+				<li>She is a _____ student who always works very hard and puts a lot of effort into her work. 
+					<br />
+					<br />
+					<form>
+						<input type="radio" name="q8" id="courteous_q8" onclick="q8Feedback()" />A. courteous<br />
+						<input type="radio" name="q8" id="conscientious _q8" onclick="q8Feedback()" />B. conscientious<br />
+						<input type="radio" name="q8" id="dedicate_q8" onclick="q8Feedback()" />C. dedicate<br />
+						<input type="radio" name="q8" id="industrious_q8" onclick="q8Feedback()" />D. industrious<br />
+					</form>
+					<p class="feedback" id="feedback8"></p>
+				</li>
+			</div>
+			<div class="shell">
+				<!-- Question 9 -->
+				<li>Lily ______ her grandchildren dreadfully.
+					<br />
+					<br />
+					<form>
+						<input type="radio" name="q9" id="induces_q9" onclick="q9Feedback()" />A. induces<br />
+						<input type="radio" name="q9" id="spoils_q9" onclick="q9Feedback()" />B. spoils<br />
+						<input type="radio" name="q9" id="entertains_q9" onclick="q9Feedback()" />C. entertains<br />
+						<input type="radio" name="q9" id="indulges_q9" onclick="q9Feedback()" />D. indulges<br />
+					</form>
+					<p class="feedback" id="feedback9"></p>
+				</li>
+			</div>
+			<div class="shell">
+				<!-- Question 10 -->
+				<li>It is _____ to bring an eight months old baby to join play groups.
+					<br />
+					<br />
+					<form>
+						<input type="radio" name="q10" id="unacceptable_q10" onclick="q10Feedback()" />A. unacceptable<br />
+						<input type="radio" name="q10" id="unreasonable_q10" onclick="q10Feedback()" />B. unreasonable<br />
+						<input type="radio" name="q10" id="ridiculous_q10" onclick="q10Feedback()" />C. ridiculous<br />
+						<input type="radio" name="q10" id="weird_q10" onclick="q10Feedback()" />D. weird<br />
+					</form>
+					<p class="feedback" id="feedback10"></p>
+				</li>
+			</div>
+			<br />
+			<br />
+		</ol>
+	</div>
+	<p id="gamingresult">Press the button to recieve victory now!!!</p>
+	<p id="timer">You still have <span id="message">180</span> seconds left.</p>
+	<p id="score">Score: <span id="newScore">0</span></p>
+	<button class="victory" id="victoryButton" onclick="displayResult()"> CLICK ME TO END THE GAME</button>
+	<br>
+	<div id="restart"></div>
+</div>
+
+<br/><br/>
+</body>
+</html>

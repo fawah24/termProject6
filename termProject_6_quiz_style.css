@@ -1,0 +1,123 @@
+body {
+	background-color: FloralWhite;
+	margin: 25px 180px;
+	font: 1em Georgia, Verdana, sans-serif;
+}
+
+/* CSS rules for Quick Quick Quick */
+h1.maroon {
+	color:maroon;
+	font: bold 2.5em "Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+}
+
+/* CSS rules for falling letters Quick Quick Quick... */
+span.letter {
+	position: relative;
+	bottom: 100px;
+	animation-name: falling;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes falling {
+	from { bottom:100px; }
+	to { bottom:0px; }
+}
+#letter1 {
+	animation-delay:1s
+}
+#letter2 {
+	animation-delay:2s;
+}
+#letter3 {
+	animation-delay:3s;
+}
+
+/* CSS rules for heading - Final Level */
+#heading {
+	color: maroon;
+	font: bold 3em Copperplate, Papyrus, fantasy;
+	text-shadow: 2px 1px 1px gray;
+	margin-top: 15px;
+	margin-left: 37px;
+	margin-bottom: 0px;
+}
+
+/* CSS rules for Reminder */
+#reminder {
+	color: maroon;
+	font: bold 1.5em Copperplate, Papyrus, fantasy;
+	margin-left: 40px;
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
+/* CSS rules for the whole game container */
+div.rose{
+	background-color: MistyRose;
+	padding-top: 10px;
+	border-radius: 20px;
+	box-shadow: 2px 3px 4px DarkSalmon;
+}
+
+/* CSS rules for questions of the overall quiz */
+div.shell{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color:SeaShell;
+	border-radius:3px;
+}
+
+/* CSS rules for feedbacks */
+p.feedback {
+	color:maroon;
+}
+
+/* CSS rules for Gaming Result */
+#gamingresult {
+	color:maroon;
+	font: bold 2em "Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+}
+
+/* CSS rules for Timer */
+#timer {
+	font: bold 1.5em "Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+}
+
+/* CSS rules for Score Container */
+#score {
+	font: bold 1em "Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+}
+
+/* CSS rules for victory button */
+button.victory {
+	display: block;
+	margin: auto;
+	font: bold 20px Copperplate, Papyrus, fantasy;
+	border: 3px ridge gray;
+   	color: Black;
+	border-radius: 10px;
+	background-color: LavenderBlush;
+}
+button:hover {
+	background-color:Pink;
+	color:Black;
+}
+
+/* CSS rule for restart button */
+#restartButton 
+{
+	font: 18px Copperplate, Papyrus, fantasy;
+	padding: 5px 5px;
+	border: outset;
+	display: block;
+	margin: auto;
+}
+
+#restartButton:hover 
+{
+	background-color: maroon;
+	color: white;
+}

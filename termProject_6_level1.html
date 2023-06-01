@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="termProject_6_level1_style.css" />
+	<script src="termProject_6_level1_script.js"></script>
+</head>
+
+<body>
+	<div id="slideGreeting">
+		<h1>Let’s Warm Up!</h1>
+	</div>
+	<div id="gameArea">
+		<h2 id="heading">Level 1: Simple Vocabulary Test</h2>
+		<p id="reminder">Warm Reminder:
+			<br />
+			This is the last level before the final quiz.
+			<br />
+			Enjoy and good luck to your quiz at the next level!
+		</p>
+		<br />
+		<img id="displayImg" src="keepgoing.jpg" alt="imageVocab" width="300px" />
+		<br />
+		<p id="wordContainer">Go to the next level until you've earned <span class="red">3</span> marks.</p>
+	    <canvas id="myCanvas" width="300" height="100"></canvas>
+	    <br />	
+	    <button class="toButton" onclick="play()">Play</button>
+	    <button class="toButton" onclick="next()">Next</button>
+	    <br />
+	    <p id="message" class="gameInfo">Press <span class="red">play</span> >< </p>
+	    <p class="gameInfo">Score: <span id="myScore">0</span></p>
+	    <div id="nextLevel"></div>
+	</div>
+</body>
+</html>
